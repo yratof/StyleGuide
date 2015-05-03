@@ -1,0 +1,17 @@
+.footer{
+	background-color: colour('accent', 'main');
+	color: $white;
+	padding: u(2rem 0);
+	
+	ul{
+		margin: 0;
+		float: left;
+		width: 33%;
+		
+	}
+
+	a{
+		text-decoration: underline;
+		color: $white;
+	}		
+}

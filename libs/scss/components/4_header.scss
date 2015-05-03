@@ -1,0 +1,63 @@
+.logo{
+	@include width(2);
+	float: left;
+}
+
+// Search Form
+.search{
+	
+	padding: u(1rem 0);
+	
+	input[type='search']{
+		width: 80%;
+		float: left;
+		margin: 0;
+	}
+	
+	%search{
+		background-image: url('../imgs/icons/search.png');
+		background-image: url('../imgs/icons/search.svg');
+		background-size: 80% auto;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	
+	input[type='submit']{
+		width: 10%;
+		border-radius: 0;
+		background-color: colour('accent', 'main');
+		@extend %search;
+		
+		&:hover, &:focus{
+			background-color: colour('accent', 'dark');
+			@extend %search;
+		}
+	}
+}
+
+
+// Icons & links out
+.account-menu{
+	
+	.account-link{
+		display: inline-block;
+		vertical-align: middle;
+		width: 32%;
+		
+		a{
+			display: block;
+			text-align: center;
+			padding: u(1rem 0);
+			font-weight: 700;
+			text-decoration: none;
+		}
+		
+		svg, img[href$=".png"]{
+			max-width: 40px;
+			max-height: 30px;
+			display: inline-block;
+			vertical-align: middle;
+
+		}
+	}
+}

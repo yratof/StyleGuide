@@ -1,0 +1,12 @@
+*~
+.DS_Store
+.svn
+.cvs
+*.bak
+*.swp
+Thumbs.db
+
+#Using CK2
+.sass-cache/*
+**/.sass-cache
+**/.sass-cache/*

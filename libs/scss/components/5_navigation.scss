@@ -1,0 +1,13 @@
+.navigation{
+	background: $brand-colour;
+	color: $white;
+	position: fixed;
+	left: 0;
+	height: 100%;
+	padding: u(2rem);
+	width: 22%;
+	
+	a{
+		color: $white;
+	}
+}

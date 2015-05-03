@@ -1,0 +1,55 @@
+/********************************************
+			   G R I D  M A T H
+
+	Math. A bunch of it. This is the math
+	that makes the grid. Math can change
+	in here to completely change the whole
+	layout of your site. 
+			  
+********************************************/
+
+$gutter: 100% / 36.2 !global;
+$gutter_em: 1rem !global; // This needs to be rem to not mess up margins
+
+// This calculate the gutter
+@function col_width($n, $use_calc: false) {
+	// We'll use a 12 column grid
+	$divisor: 12 / $n;
+	@if ($use_calc) {
+		$gutter_offset: $gutter_em * ($divisor - 1);
+		// We use 99.95% because ie10 isn't great at math.
+		@return calc((99.95% - #{$gutter_offset}) / #{$divisor});
+	}
+	@else {
+		@return (99.95% - $gutter * ($divisor - 1)) / $divisor;
+	}
+}
+
+/* Adding an extra mixin to make widths fallbackabler.*/
+
+@mixin width($columns){
+	width: col_width($columns);
+	width: col_width($columns, true);
+}
+
+/* Offset class. Experimental, but looks nice */
+
+
+@mixin offset($amount){
+	// how much left are we going with...
+	margin-left: col_width($amount);
+	margin-left: col_width($amount, true);
+
+	// What remains of the offset
+	$remain: 12 - $amount;
+	width: col_width($remain);
+	width: col_width($remain, true);
+}
+
+// Loop through this shit.
+@for $w from 1 through 12{
+    .offset-#{$w}{
+		@include offset($w);
+    }
+}
+
