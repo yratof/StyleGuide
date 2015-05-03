@@ -935,6 +935,14 @@ values are commented out on each line.
 
 /*
 	Colours.
+	
+	Put all the colours you use in the photoshop 
+	document into this map, you'll see them all 
+	show on the style guide and look pretty :)
+	
+	You're limited to 20 colours. If you need 
+	more, wtf are you playing at?
+	
 */
 /*
 
@@ -1002,28 +1010,28 @@ It'll make a nice swatch on the other side
   .colour:nth-of-type(2) .block {
     height: 112px;
     width: 112px;
-    background-color: #474a56;
+    background-color: #47e4aa;
     display: block;
     border-radius: 3px;
     margin-bottom: 16px; }
     .colour:nth-of-type(2) .block:hover {
-      background-color: #595c66; }
+      background-color: #59e6b2; }
     .colour:nth-of-type(2) .block:active {
-      background-color: #3f424d; }
+      background-color: #3fcd99; }
   .colour:nth-of-type(2) .rgb {
     display: block; }
     .colour:nth-of-type(2) .rgb:before {
       content: "RGB: ";
       opacity: 0.5; }
     .colour:nth-of-type(2) .rgb:after {
-      content: "71, 74, 86"; }
+      content: "71, 228, 170"; }
   .colour:nth-of-type(2) .hex {
     display: block; }
     .colour:nth-of-type(2) .hex:before {
       content: "Hex: ";
       opacity: 0.5; }
     .colour:nth-of-type(2) .hex:after {
-      content: "#474a56"; }
+      content: "#47e4aa"; }
 .colour:nth-of-type(3) {
   display: inline-block;
   width: 20%;
@@ -1042,28 +1050,28 @@ It'll make a nice swatch on the other side
   .colour:nth-of-type(3) .block {
     height: 112px;
     width: 112px;
-    background-color: #2288dd;
+    background-color: #e7d7b5;
     display: block;
     border-radius: 3px;
     margin-bottom: 16px; }
     .colour:nth-of-type(3) .block:hover {
-      background-color: #3893e0; }
+      background-color: #e9dbbc; }
     .colour:nth-of-type(3) .block:active {
-      background-color: #1e7ac6; }
+      background-color: #cfc1a2; }
   .colour:nth-of-type(3) .rgb {
     display: block; }
     .colour:nth-of-type(3) .rgb:before {
       content: "RGB: ";
       opacity: 0.5; }
     .colour:nth-of-type(3) .rgb:after {
-      content: "34, 136, 221"; }
+      content: "231, 215, 181"; }
   .colour:nth-of-type(3) .hex {
     display: block; }
     .colour:nth-of-type(3) .hex:before {
       content: "Hex: ";
       opacity: 0.5; }
     .colour:nth-of-type(3) .hex:after {
-      content: "#2288dd"; }
+      content: "#e7d7b5"; }
 .colour:nth-of-type(4) {
   display: inline-block;
   width: 20%;
@@ -1082,27 +1090,147 @@ It'll make a nice swatch on the other side
   .colour:nth-of-type(4) .block {
     height: 112px;
     width: 112px;
-    background-color: #ebebeb;
+    background-color: #d6c1cb;
     display: block;
     border-radius: 3px;
     margin-bottom: 16px; }
     .colour:nth-of-type(4) .block:hover {
-      background-color: #ededed; }
+      background-color: #dac7d0; }
     .colour:nth-of-type(4) .block:active {
-      background-color: lightgray; }
+      background-color: #c0adb6; }
   .colour:nth-of-type(4) .rgb {
     display: block; }
     .colour:nth-of-type(4) .rgb:before {
       content: "RGB: ";
       opacity: 0.5; }
     .colour:nth-of-type(4) .rgb:after {
-      content: "235, 235, 235"; }
+      content: "214, 193, 203"; }
   .colour:nth-of-type(4) .hex {
     display: block; }
     .colour:nth-of-type(4) .hex:before {
       content: "Hex: ";
       opacity: 0.5; }
     .colour:nth-of-type(4) .hex:after {
+      content: "#d6c1cb"; }
+.colour:nth-of-type(5) {
+  display: inline-block;
+  width: 20%;
+  line-height: 1.75;
+  margin-bottom: 16px;
+  -webkit-transition: 0.2s all cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: 0.2s all cubic-bezier(0.77, 0, 0.175, 1);
+  -transition: 0.2s all cubic-bezier(0.77, 0, 0.175, 1);
+  transition: 0.2s all cubic-bezier(0.77, 0, 0.175, 1); }
+  .colour:nth-of-type(5):hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05); }
+  .colour:nth-of-type(5) .block {
+    height: 112px;
+    width: 112px;
+    background-color: #2ab9e6;
+    display: block;
+    border-radius: 3px;
+    margin-bottom: 16px; }
+    .colour:nth-of-type(5) .block:hover {
+      background-color: #3fc0e8; }
+    .colour:nth-of-type(5) .block:active {
+      background-color: #25a6cf; }
+  .colour:nth-of-type(5) .rgb {
+    display: block; }
+    .colour:nth-of-type(5) .rgb:before {
+      content: "RGB: ";
+      opacity: 0.5; }
+    .colour:nth-of-type(5) .rgb:after {
+      content: "42, 185, 230"; }
+  .colour:nth-of-type(5) .hex {
+    display: block; }
+    .colour:nth-of-type(5) .hex:before {
+      content: "Hex: ";
+      opacity: 0.5; }
+    .colour:nth-of-type(5) .hex:after {
+      content: "#2ab9e6"; }
+.colour:nth-of-type(6) {
+  display: inline-block;
+  width: 20%;
+  line-height: 1.75;
+  margin-bottom: 16px;
+  -webkit-transition: 0.2s all cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: 0.2s all cubic-bezier(0.77, 0, 0.175, 1);
+  -transition: 0.2s all cubic-bezier(0.77, 0, 0.175, 1);
+  transition: 0.2s all cubic-bezier(0.77, 0, 0.175, 1); }
+  .colour:nth-of-type(6):hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05); }
+  .colour:nth-of-type(6) .block {
+    height: 112px;
+    width: 112px;
+    background-color: #81a8dd;
+    display: block;
+    border-radius: 3px;
+    margin-bottom: 16px; }
+    .colour:nth-of-type(6) .block:hover {
+      background-color: #8db0e0; }
+    .colour:nth-of-type(6) .block:active {
+      background-color: #7497c6; }
+  .colour:nth-of-type(6) .rgb {
+    display: block; }
+    .colour:nth-of-type(6) .rgb:before {
+      content: "RGB: ";
+      opacity: 0.5; }
+    .colour:nth-of-type(6) .rgb:after {
+      content: "129, 168, 221"; }
+  .colour:nth-of-type(6) .hex {
+    display: block; }
+    .colour:nth-of-type(6) .hex:before {
+      content: "Hex: ";
+      opacity: 0.5; }
+    .colour:nth-of-type(6) .hex:after {
+      content: "#81a8dd"; }
+.colour:nth-of-type(7) {
+  display: inline-block;
+  width: 20%;
+  line-height: 1.75;
+  margin-bottom: 16px;
+  -webkit-transition: 0.2s all cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: 0.2s all cubic-bezier(0.77, 0, 0.175, 1);
+  -transition: 0.2s all cubic-bezier(0.77, 0, 0.175, 1);
+  transition: 0.2s all cubic-bezier(0.77, 0, 0.175, 1); }
+  .colour:nth-of-type(7):hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05); }
+  .colour:nth-of-type(7) .block {
+    height: 112px;
+    width: 112px;
+    background-color: #ebebeb;
+    display: block;
+    border-radius: 3px;
+    margin-bottom: 16px; }
+    .colour:nth-of-type(7) .block:hover {
+      background-color: #ededed; }
+    .colour:nth-of-type(7) .block:active {
+      background-color: lightgray; }
+  .colour:nth-of-type(7) .rgb {
+    display: block; }
+    .colour:nth-of-type(7) .rgb:before {
+      content: "RGB: ";
+      opacity: 0.5; }
+    .colour:nth-of-type(7) .rgb:after {
+      content: "235, 235, 235"; }
+  .colour:nth-of-type(7) .hex {
+    display: block; }
+    .colour:nth-of-type(7) .hex:before {
+      content: "Hex: ";
+      opacity: 0.5; }
+    .colour:nth-of-type(7) .hex:after {
       content: "#ebebeb"; }
 
 /*********************************
